@@ -1,0 +1,105 @@
+/*홈페이지 배경 css*/
+body {
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: fantasy
+}
+
+/*네비게이션 메뉴바 css*/
+#top {
+    height: 30px;
+    margin-left: 50px;
+}
+#top ul li {
+    list-style: none;
+    color: white;
+    background: black;
+    float: left;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+#top .navlink {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 420px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "Trebuchet Ms", Dotum, Arial;
+}
+
+
+/*Dog h1 제목 css*/
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+/*강아지 용품준비하기 h2 css*/
+h2 {
+    display: block;
+    font-size: 45px;
+    text-align: center;
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 30px;
+    padding: 25px;
+}
+
+/*개별 article 상자 css*/
+article {
+    display: inline-block;
+    background-color: white;
+    margin: 15px 15px;
+    padding: 20px;
+    width: 90%;
+    height: 300px;
+    border-radius: 30px;
+}
+
+/*aritcle내부 h3 css*/
+h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+/*article 묶음 css*/
+#box {
+    position: relative;
+    display: block;
+    margin: auto;
+    padding: 50px;
+    column-count: 2;
+}
+/*article 박스안 img 정렬*/
+.le {
+    float: left;
+}
+
+/*article 상자 색칠하기*/
+#intro1:hover {
+    background-color: red;
+    transition: all 3s;
+}
+#intro2:hover {
+    background-color: orange;
+    transition: all 3s;
+}
+#intro3:hover {
+    background-color: yellow;
+    transition: all 3s;
+}
+#intro4:hover {
+    background-color: green;
+    transition: all 3s;
+}
+#intro5:hover {
+    background-color: coral;
+    transition: all 3s;
+}
+
+
+
