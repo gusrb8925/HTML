@@ -9,7 +9,6 @@ body {
 /*네비게이션 메뉴바 css*/
 #top {
     height: 30px;
-    margin-left: 50px;
 }
 #top ul li {
     list-style: none;
@@ -24,7 +23,7 @@ body {
     text-decoration: none;
     color: white;
     display: block;
-    width: 420px;
+    width: 200px;
     font-size: 12px;
     font-weight: bold;
     font-family: "Trebuchet Ms", Dotum, Arial;
