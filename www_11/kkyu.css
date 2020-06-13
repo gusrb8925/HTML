@@ -10,6 +10,7 @@ body {
 #top {
     height: 30px;
 }
+
 #top ul li {
     list-style: none;
     color: white;
@@ -19,6 +20,7 @@ body {
     vertical-align: middle;
     text-align: center;
 }
+
 #top .navlink {
     text-decoration: none;
     color: white;
@@ -73,6 +75,7 @@ h3 {
     padding: 50px;
     column-count: 2;
 }
+
 /*article 박스안 img 정렬*/
 .le {
     float: left;
@@ -83,22 +86,23 @@ h3 {
     background-color: red;
     transition: all 3s;
 }
+
 #intro2:hover {
     background-color: orange;
     transition: all 3s;
 }
+
 #intro3:hover {
     background-color: yellow;
     transition: all 3s;
 }
+
 #intro4:hover {
     background-color: green;
     transition: all 3s;
 }
+
 #intro5:hover {
     background-color: coral;
     transition: all 3s;
 }
-
-
-
