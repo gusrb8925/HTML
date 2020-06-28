@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sum() {
+            var a = document.getElementById('nu1').value;
+            var b = document.getElementById('nu2').value;
+            var c = document.getElementById('nu3').value;
+
+            document.getElementById("ressum").value = parseInt(a) + parseInt(b) + parseInt(c);
+
+            document.getElementById("op1").value = parseInt(a) * 25000;
+            document.getElementById("op2").value = parseInt(b) * 27000;
+            document.getElementById("op3").value = parseInt(c) * 25000;
+
+            document.getElementById("reswon").value = (parseInt(a) * 25000) + (parseInt(b) * 27000) + (parseInt(c) * 25000);
+        };
+
+    </script>
+
+    <h1>서적 주문 양식<br></h1>
+    주문서<br><br>
+    <form>
+        <table border="1">
+            <tr>
+                <th>책 제목</th>
+                <th>가격</th>
+                <th>수량</th>
+                <th>합계</th>
+            </tr>
+            <tr>
+                <td>HTML5</td>
+                <td>25000원</td>
+                <td><input type="text" size="2" id="nu1"></td>
+                <td><input type="text" size="2" id="op1">원</td>
+            </tr>
+            <tr>
+                <td>CSS3</td>
+                <td>27000원</td>
+                <td><input type="text" size="2" id="nu2"></td>
+                <td><input type="text" size="2" id="op2">원</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>25000원</td>
+                <td><input type="text" size="2" id="nu3"></td>
+                <td><input type="text" size="2" id="op3">원</td>
+            </tr>
+            <tr>
+                <td>합계</td>
+                <td></td>
+                <td><input type="text" size="2" id="ressum"></td>
+                <td><input type="text" size="2" id="reswon">원</td>
+            </tr>
+        </table>
+
+        <input type="button" value="합계계산" onclick='sum();'>
+        <input type="reset" value="초기화">
+    </form>
+
+</body>
+
+</html>

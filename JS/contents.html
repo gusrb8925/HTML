@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn"> 클릭하세요=></button>
+    <script>
+        document.getElementById('btn').onclick = function() {
+            if(this.textContent.length>15){
+            this.textContent+='☆';
+            }else{
+                this.textContent='클릭하세요=>';
+            }
+        };
+    </script>
+</body></html>
