@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>책 주문 입력 내용</h1>
+    <table border="1">
+        <script>
+            var n = prompt("구매할 책 개수를 입력하세여 :");
+            a = parseInt(n);
+            var arr = [0, 0, 0];
+            var arrbookname = ['It', '소설', '경제'];
+            var price = [7000, 10000, 8000];
+            price1 = 0;
+            price2 = 0;
+            price3 = 0;
+            for (i = 0; i < a; i++) {
+                var ab = prompt("구매할 책의 종류를 입력하세요\n1.It\n2.소설\n3.경제");
+                ac = parseInt(ab);
+                if (ac == 1) {
+                    arr[0]++;
+                    price1 += 7000;
+                } else if (ac == 2) {
+                    arr[1]++;
+                    price2 += 10000;
+                } else if (ac == 3) {
+                    arr[2]++;
+                    price3 += 8000;
+                } else {
+                    alert("종류를 잘못입력했습니다.")
+                    i--;
+                }
+            }
+            pricesum = price1 + price2 + price3;
+            document.write("<tr>");
+            document.write("<th>책 제목</th>");
+            document.write("<th>주문권수</th>");
+            document.write("<th>가 격</th>");
+            document.write("</tr>");
+
+            for (i = 0; i < 3; i++) {
+                document.write("<tr><td>" + arrbookname[i] + "</td><td>" + arr[i] + "권</td><td>" + price[i] + "원</td></tr>");
+            }
+            document.write("<tr>");
+            document.write("<td>합계</td>");
+            document.write("<td>" + a + "권</td>");
+            document.write("<td>" + pricesum + "원</td>");
+            document.write("</tr>");
+        </script>
+    </table>
+
+</body></html>
